@@ -1,0 +1,129 @@
+/* Guess The Number Game CSS */
+
+
+body {
+    background-image: url('../images/0f82a0f1-3799-4e0e-9b52-6e8f8639db32.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff; 
+    font-family: 'Rye', cursive !important
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}   
+
+/* Navbar*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* tittle */
+h1 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* Button */
+.btn-secondary {
+    background-color: #000 !important;
+    border: none;
+    color: #fff;
+    margin: 20px auto;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+.btn-secondary {
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    box-shadow: 
+        0 0 10px #FFD700,
+        0 0 20px #FFD700,
+        0 0 40px #FFD700;
+    transform: scale(1.05);
+}
+footer.bg-dark {
+    background-color: #000000 !important;
+} 
+
+/* Game Card */
+
+.game-card {
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Input */
+#guessInput {
+    background-color: #000;
+    border: 1px solid #FFD700;
+    color : #FFD700;
+    text-align: center;
+    font-weight: bold;
+}
+
+#guessInput::placeholder {
+    color: rgba(255, 215, 0, 0.6);
+}
+
+#guessInput:focus {
+    background-color: #000;
+    border-color: #FFD700;
+    box-shadow:
+        0 0 10px #FFD700,
+        0 0 20px #FFD700;
+    color: #FFD700;
+}
+
+/* Reset Button */
+.btn-outline-light {
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    background-color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+} 
+
+.btn-outline-light:hover {
+    background-color: #FFD700;
+    color: #000;
+    border-color: #FFD700;
+    box-shadow:
+        0 0 10px #FFD700,
+        0 0 20px #FFD700;
+}
+
+/* Result Text */
+.result {
+    color: #FFD700;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Attempts */
+.attempts {
+    color: #FFD700;
+    font-weight: bold;
+} 
